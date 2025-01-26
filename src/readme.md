@@ -1,0 +1,1 @@
+This project implements a water potability classifier with dvc(data version control) to incorporate ML pipelines. 
