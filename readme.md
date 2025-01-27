@@ -101,7 +101,6 @@ Water_potability_with_dvc/
 ├── src/               # Source code for preprocessing and training
 ├── config/            # Configuration files for the pipeline
 ├── dvc.yaml           # DVC pipeline definition
-├── main.py            # Entry point for custom execution
 ├── requirements.txt   # Python dependencies
 └── README.md          # Project documentation
 ```
