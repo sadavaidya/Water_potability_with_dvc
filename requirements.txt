@@ -1,0 +1,5 @@
+numpy
+pandas
+pickel
+dvc
+scikit-learn

@@ -21,7 +21,7 @@ This project demonstrates the use of Machine Learning pipelines and version cont
 
 The **Water Potability Prediction** project aims to classify water samples as potable or non-potable based on key physicochemical attributes. By leveraging DVC for data versioning, the project maintains a robust and traceable workflow for:
 
-- Data preprocessing and transformation.
+- Data preprocessing.
 - Training and validating predictive models.
 - Experiment tracking and version control for datasets and models.
 
@@ -43,7 +43,6 @@ The **Water Potability Prediction** project aims to classify water samples as po
 - **Pandas**, **NumPy**
 - **Scikit-learn**
 - **DVC (Data Version Control)**
-- **Matplotlib**, **Seaborn**
 
 ---
 
@@ -78,15 +77,18 @@ The **Water Potability Prediction** project aims to classify water samples as po
    ```bash
    dvc repro
    ```
-
+7. To see the metrics from json file, you can use following dvc command:
+   ```bash
+   dvc metrics show
+   ```
 ---
 
 ## Usage
 
-- Add new datasets to the `data/` folder and version them using DVC.
-- Modify pipeline stages or configurations in `dvc.yaml`.
+- Add new datasets to the `data/` folder using data collection file and version them using DVC.
+- Modify pipeline stages or configurations in `dvc.yaml`. This is done after adding each file in src using command `dvc stage add` and necessary arguments. 
 - Use DVC to track experiments and compare results.
-- Run `python main.py` for custom executions.
+- Run individual python files from src for custom executions and debugging.
 
 ---
 
